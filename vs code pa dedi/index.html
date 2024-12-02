@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXts5wF9dwqbUUH7Asp1Aba7uj8ZtIeuq1w&s");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br>Saung Sunda</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">samping Alun Alun Karawang</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE SAUNG SUNDA</span></h5>
+    <p>Saung Sunda adalah salah satu restoran terkenal di Indonesia yang mengkhususkan diri dalam masakan Sunda, yang berasal dari daerah Jawa Barat. Restoran ini dikenal dengan suasana tradisional dan alami, serta menawarkan berbagai hidangan yang menampilkan cita rasa dan bahan-bahan khas masakan Sunda.
+
+        Di banyak restoran, Ayam Guling disajikan dengan nasi, sayuran, dan sambal (pasta cabai pedas), menciptakan hidangan yang seimbang dan memuaskan. Hidangan ini sering dinikmati saat acara-acara khusus atau upacara, sehingga menjadi salah satu favorit dalam masakan Indonesia.
+        
+        Jika Anda mencari restoran tertentu yang terkenal dengan Ayam Guling, banyak warung lokal di Bali dan kota-kota lain di Indonesia yang mengkhususkan diri dalam hidangan ini, sering kali menggunakan resep dan teknik tradisional.
+        
+        
+        
+        </p>
+    <p> .</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Menawarkan hidangan khas Sunda seperti nasi liwet, ayam penyet, ikan bakar, sayur asem, dan sambal terasi, Dll. Dan juga menyajikan berbagai sayuran segar dan lauk pauk.</i></p>
+      <p></p>
+    </div>
+    <img src="https://www.rukita.co/stories/wp-content/uploads/2020/02/Rumah-makan-khas-sunda.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> samping Alun Alun Karawang</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Nasi Liwet</h5>
+      <p class="w3-text-grey">Nasi + Ayam + Ikan + Tahu + Tempe + Sayur + Sambal</p><br>
+    
+      <h5>Ayam Penyet</h5>
+      <p class="w3-text-grey">Ayam penyet + Nasi + Sambal</p><br>
+    
+      <h5>Ikan Bakar</h5>
+      <p class="w3-text-grey">Ikan Bakar + Nasi + Sambal</p><br>
+    
+      <h5>Sayur Asem</h5>
+      <p class="w3-text-grey">Sayur Asem + Nasi + Sambel</p><br>
+    
+      <h5>Sambel Terasi</h5>
+      <p class="w3-text-grey">Sambel Terasi Only</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Es Cendol</h5>
+      <p class="w3-text-grey">Minuman manis yang terbuat dari cendol (pasta dari tepung beras), santan, dan gula merah.</p><br>
+    
+      <h5>Teh Manis</h5>
+      <p class="w3-text-grey">Teh yang disajikan dingin dengan tambahan gula, sering kali menjadi pilihan yang segar.</p><br>
+    
+      <h5>Wedang Jahe</h5>
+      <p class="w3-text-grey">Minuman hangat yang terbuat dari jahe, gula merah yang dicampur dengan daun pandan.
+
+      </p><br>
+    
+      <h5>Air Kelapa Muda</h5>
+      <p class="w3-text-grey">Segar dan menyehatkan, sering disajikan dalam keadaan dingin.
+
+      </p><br>
+    
+      <h5>Bubur Sumsum</h5>
+      <p class="w3-text-grey">Meskipun lebih sering dianggap makanan penutup, bubur sumsum (yang terbuat dari tepung beras dan disajikan dengan kuah gula merah) bisa juga menjadi pilihan minuman yang manis.
+
+      </p>
+    </div>  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJmV5QckPDtcerJOQLRaTonE2yDLupXiYrA&s" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOKASI</span></h5>
+    <p>TEMUKAN Lokasi Saya : dibelakang Alun Alun Karawang </p>
+    <img src="https://kosadata.com/uploads/post_image/4977/IMG_20231117_065800.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span>Menerima Pesanan untuk acara wedding, Ulang tahun, Dll.</p>
+    <p><strong>Reserve</strong> booking meja dulu yakk!:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>This website was made with W3schools Spaces. Make your own free website today!</p>
+  <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
